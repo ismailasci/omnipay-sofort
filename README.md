@@ -1,4 +1,4 @@
-omnipay-sofort
+SOFORT Überweisung Omnipay gateway
 ==============
 
 [SOFORT Überweisung](https://www.sofort.com/eng-INT/) gateway for awesome [Omnipay](https://github.com/adrianmacneil/omnipay) library.
