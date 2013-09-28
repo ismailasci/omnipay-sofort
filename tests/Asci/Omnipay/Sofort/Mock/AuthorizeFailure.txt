@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 26 Sep 2013 21:13:08 GMT
+Content-Type: application/xml
+Content-Length: 273
+Connection: close
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<errors><error><code>8015</code><message>Amount is out of range.</message><field>amount</field></error><su><errors><error><code>8015</code><message>Amount is out of range.</message><field>amount</field></error></errors></su></errors>

@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 28 Sep 2013 19:29:18 GMT
+Content-Type: application/xml
+Content-Length: 56
+Connection: close
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<transactions />

@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 26 Sep 2013 20:38:35 GMT
+Content-Type: application/xml
+Content-Length: 229
+Connection: close
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<new_transaction><transaction>55742-165747-52449B4B-6475</transaction><payment_url>https://www.sofort.com/payment/go/dd853fc10480b7b6b1ae47252a973166e96aab5b</payment_url></new_transaction>

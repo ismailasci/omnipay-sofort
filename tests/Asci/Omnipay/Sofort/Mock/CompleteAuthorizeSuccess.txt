@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 28 Sep 2013 19:02:50 GMT
+Content-Type: application/xml
+Content-Length: 1534
+Connection: close
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<transactions><transaction_details><project_id>123456</project_id><transaction>55742-165747-52441DAF-3596</transaction><test>1</test><time>2013-09-26T13:42:55+02:00</time><status>pending</status><status_reason>not_credited_yet</status_reason><status_modified>2013-09-26T13:42:55+02:00</status_modified><payment_method>su</payment_method><language_code>de</language_code><amount>44.95</amount><amount_refunded>0.00</amount_refunded><currency_code>EUR</currency_code><reasons><reason>Smartphone 500</reason></reasons><user_variables /><sender><holder>Musterman, Petra</holder><account_number>2345678902</account_number><bank_code>88888888</bank_code><bank_name>Demo Bank</bank_name><bic>PNAGDE00000</bic><iban>DE96888888882345678902</iban><country_code>DE</country_code></sender><recipient><holder>simplesurance GmbH</holder><account_number>9999999999</account_number><bank_code>70011110</bank_code><bank_name>SOFORT Bank</bank_name><bic>DEKTDE71002</bic><iban>DE71700111109999999999</iban><country_code>DE</country_code></recipient><email_customer /><phone_customer /><exchange_rate>1.0000</exchange_rate><costs><fees>0.00</fees><currency_code>EUR</currency_code><exchange_rate>1.0000</exchange_rate></costs><su><consumer_protection>0</consumer_protection></su><status_history_items><status_history_item><status>pending</status><status_reason>not_credited_yet</status_reason><time>2013-09-26T13:42:55+02:00</time></status_history_item></status_history_items></transaction_details></transactions>
