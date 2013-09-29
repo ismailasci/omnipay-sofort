@@ -15,11 +15,13 @@ The second one is `completeAuthorize`. This method doesn't actually complete any
 
 To install, simply add it to your composer.json file:
 
+```json
 {
     "require": {
         "asci/omnipay-sofort": "dev-master"
     }
 }
+```
 
 and run `composer update`
 
