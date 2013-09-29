@@ -11,6 +11,18 @@ This gateway only provides 2 methods to place a successful transaction. The firs
 
 The second one is `completeAuthorize`. This method doesn't actually complete anything. Since SOFORT Überweisung doesn't have a `capture` functionality, the only way to know about a transaction is checking that transaction details. According to official docs, if there is no any successful or failed transactions, the API will return empty `transactions` XML object.
 
+#### Installation
+
+To install, simply add it to your composer.json file:
+
+{
+    "require": {
+        "asci/omnipay-sofort": "dev-master"
+    }
+}
+
+and run `composer update`
+
 #### Usage
 
 **1. Authorize**
@@ -65,10 +77,3 @@ if ($response->isSuccessful()) {
 }
 
 ```
-
-
-
-
-
-
-

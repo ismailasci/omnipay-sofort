@@ -1,6 +1,9 @@
 {
     "name": "asci/omnipay-sofort",
-    "description": "SOFORT Überweisung provider for omnipay",
+    "description": "SOFORT Überweisung gateway for omnipay",
+    "type": "omnipay-gateway",
+    "keywords": ["omnipay", "payment", "gateway", "sofort", "provider"],
+    "license": "Unlicense",
     "minimum-stability": "dev",
     "authors": [
         {
@@ -13,7 +16,7 @@
     },
     "require": {
         "php": ">=5.3.2",
-        "omnipay/omnipay": "dev-master"
+        "omnipay/omnipay": "1.0.*@dev"
     },
     "require-dev": {
         "guzzle/plugin-mock": "~3.1",
