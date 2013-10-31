@@ -16,7 +16,7 @@
     },
     "require": {
         "php": ">=5.3.2",
-        "omnipay/omnipay": "1.0.*@dev"
+        "omnipay/omnipay": "1.*"
     },
     "require-dev": {
         "guzzle/plugin-mock": "~3.1",
