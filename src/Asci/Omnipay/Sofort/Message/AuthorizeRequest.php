@@ -16,6 +16,7 @@ class AuthorizeRequest extends AbstractRequest
         $data->addChild('currency_code', $this->getCurrency());
         $data->addChild('success_url', str_replace('&', '&amp;', $this->getReturnUrl()));
         $data->addChild('abort_url', str_replace('&', '&amp;', $this->getCancelUrl()));
+        $data->addChild('notification_urls')->addChild('notification_url', str_replace('&', '&amp;', $this->getNotifyUrl()));
 
         $reasons = $data->addChild('reasons');
         $reasons->addChild('reason', $this->getDescription());
