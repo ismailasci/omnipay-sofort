@@ -1,6 +1,6 @@
 <?php
 
-namespace Asci\Omnipay\Sofort\Message;
+namespace Omnipay\Sofort\Message;
 
 use Omnipay\Common\Message\RedirectResponseInterface;
 
@@ -37,5 +37,7 @@ class AuthorizeResponse extends Response implements RedirectResponseInterface
 
             return $message;
         }
+
+        return null;
     }
 }

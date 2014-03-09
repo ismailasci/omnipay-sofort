@@ -1,7 +1,6 @@
 <?php
 
-namespace Asci\Omnipay\Sofort\Message;
-
+namespace Omnipay\Sofort\Message;
 
 use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RequestInterface;

@@ -1,7 +1,6 @@
 <?php
 
-namespace Asci\Omnipay\Sofort\Message;
-
+namespace Omnipay\Sofort\Message;
 
 abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
 {
@@ -37,10 +36,10 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         return $this->setParameter('projectId', $value);
     }
 
-    public function send()
+    public function sendData($data)
     {
         $httpResponse = $this->httpClient
-            ->post($this->getEndpoint(), null, $this->getData()->asXML())
+            ->post($this->getEndpoint(), null, $data->asXML())
             ->setAuth($this->getUsername(), $this->getPassword())
             ->send();
 

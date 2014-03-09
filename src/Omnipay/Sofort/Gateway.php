@@ -1,6 +1,6 @@
 <?php
 
-namespace Asci\Omnipay\Sofort;
+namespace Omnipay\Sofort;
 
 use Omnipay\Common\AbstractGateway;
 
@@ -53,12 +53,12 @@ class Gateway extends AbstractGateway
 
     public function authorize(array $parameters = array())
     {
-        return $this->createRequest('\Asci\Omnipay\Sofort\Message\AuthorizeRequest', $parameters);
+        return $this->createRequest('\Omnipay\Sofort\Message\AuthorizeRequest', $parameters);
     }
 
     public function completeAuthorize(array $parameters = array())
     {
-        return $this->createRequest('\Asci\Omnipay\Sofort\Message\CompleteAuthorizeRequest', $parameters);
+        return $this->createRequest('\Omnipay\Sofort\Message\CompleteAuthorizeRequest', $parameters);
     }
 
     public function purchase(array $parameters = array())
