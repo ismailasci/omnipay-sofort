@@ -5,6 +5,11 @@ SOFORT Überweisung Omnipay gateway
 
 [![Build Status](https://travis-ci.org/ismailasci/omnipay-sofort.png?branch=master)](https://travis-ci.org/ismailasci/omnipay-sofort)
 
+**Important Note: Omnipay 1.x Users**
+
+If you are using Omnipay 1.x versions please use [1.x](https://github.com/ismailasci/omnipay-sofort/tree/1.x) tree.
+For detailed information you can check Omnipay's 2.0 [release notes](https://github.com/omnipay/omnipay/releases/tag/v2.0.0).
+
 #### API Notes
 
 This gateway only provides 2 methods to place a successful transaction. The first one is `authorize` which initializes an authorization and returns a redirect url. 
@@ -18,7 +23,7 @@ To install, simply add it to your composer.json file:
 ```json
 {
     "require": {
-        "asci/omnipay-sofort": "dev-master"
+        "asci/omnipay-sofort": "~2.0"
     }
 }
 ```
@@ -27,10 +32,12 @@ and run `composer update`
 
 #### Usage
 
+For general usage instructions, please see the main [Omnipay](https://github.com/omnipay/omnipay) repository.
+
 **1. Authorize**
 
 ```php
-$gateway = new \Asci\Omnipay\Sofort\Gateway();
+$gateway = Omnipay::create('Sofort');
 $gateway->initialize(array(
     'username' => 'your_account_id',
     'password' => 'password',
@@ -58,7 +65,7 @@ if ($response->isRedirect()) {
 **2. Complete Authorize**
 
 ```php
-$gateway = new \Asci\Omnipay\Sofort\Gateway();
+$gateway = Omnipay::create('Sofort');
 $gateway->initialize(array(
     'username' => 'your_account_id',
     'password' => 'password',

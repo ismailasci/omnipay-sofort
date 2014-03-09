@@ -1,18 +1,8 @@
 <?php
 
-/*
- * This file is part of the Omnipay package.
- *
- * (c) Adrian Macneil <adrian@adrianmacneil.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
+namespace Omnipay\Sofort\Message;
 
-namespace Asci\Omnipay\Sofort\Message;
-
-use Omnipay\TestCase;
-
+use Omnipay\Tests\TestCase;
 
 class AuthorizeResponseTest extends TestCase
 {

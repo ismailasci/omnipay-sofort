@@ -1,10 +1,9 @@
 {
     "name": "asci/omnipay-sofort",
-    "description": "SOFORT Überweisung gateway for omnipay",
-    "type": "omnipay-gateway",
-    "keywords": ["omnipay", "payment", "gateway", "sofort", "provider"],
-    "license": "Unlicense",
-    "minimum-stability": "dev",
+    "description": "SOFORT Überweisung gateway for Omnipay payment processing library",
+    "type": "library",
+    "keywords": ["omnipay", "sofort", "uberweisung", "payment", "gateway", "provider"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Ismail Asci",
@@ -12,18 +11,17 @@
         }
     ],
     "autoload": {
-        "psr-0": { "Asci" : "src/" }
+        "psr-0": { "Omnipay\\Sofort\\" : "src/" }
     },
     "require": {
-        "php": ">=5.3.2",
-        "omnipay/omnipay": "1.*"
+        "omnipay/common": "~2.0"
     },
     "require-dev": {
-        "guzzle/plugin-mock": "~3.1",
-        "mockery/mockery": "~0.7",
-        "phpunit/phpunit": "~3.7.16",
-        "silex/silex": "1.0.*@dev",
-        "squizlabs/php_codesniffer": "~1.4.4",
-        "twig/twig": "~1.12"
+        "omnipay/tests": "~2.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
     }
 }
