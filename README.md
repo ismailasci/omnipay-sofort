@@ -1,9 +1,12 @@
 SOFORT Überweisung Omnipay gateway
 ==============
 
-[SOFORT Überweisung](https://www.sofort.com/eng-INT/) gateway for awesome [Omnipay](https://github.com/adrianmacneil/omnipay) library.
-
 [![Build Status](https://travis-ci.org/ismailasci/omnipay-sofort.png?branch=master)](https://travis-ci.org/ismailasci/omnipay-sofort)
+[![Latest Stable Version](https://poser.pugx.org/asci/omnipay-sofort/v/stable.png)](https://packagist.org/packages/asci/omnipay-sofort)
+[![Total Downloads](https://poser.pugx.org/asci/omnipay-sofort/downloads.png)](https://packagist.org/packages/asci/omnipay-sofort)
+
+
+[SOFORT Überweisung](https://www.sofort.com/eng-INT/) gateway for awesome [Omnipay](https://github.com/adrianmacneil/omnipay) library.
 
 **Important Note: Omnipay 1.x Users**
 
