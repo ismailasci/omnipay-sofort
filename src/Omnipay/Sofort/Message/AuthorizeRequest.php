@@ -22,7 +22,14 @@ class AuthorizeRequest extends AbstractRequest
         );
 
         $reasons = $data->addChild('reasons');
-        $reasons->addChild('reason', $this->getDescription());
+
+        if (is_string($this->getDescription())) {
+            $reasons->addChild('reason', $this->getDescription());
+        } elseif (is_array($this->getDescription())) {
+            foreach ($this->getDescription() as $reason) {
+                $reasons->addChild('reason', $reason);
+            }
+        }
 
         $su = $data->addChild('su');
         $su->addChild('customer_protection', 1);
