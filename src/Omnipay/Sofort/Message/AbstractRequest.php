@@ -36,6 +36,16 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         return $this->setParameter('projectId', $value);
     }
 
+    public function getCustomerProtection()
+    {
+        return $this->getParameter('customer_protection');
+    }
+
+    public function setCustomerProtection($value)
+    {
+        return $this->setParameter('customer_protection', (bool) $value);
+    }
+
     public function sendData($data)
     {
         $httpResponse = $this->httpClient

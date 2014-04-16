@@ -32,7 +32,7 @@ class AuthorizeRequest extends AbstractRequest
         }
 
         $su = $data->addChild('su');
-        $su->addChild('customer_protection', 1);
+        $su->addChild('customer_protection', false === $this->getCustomerProtection() ? 0 : 1);
 
         return $data;
     }
