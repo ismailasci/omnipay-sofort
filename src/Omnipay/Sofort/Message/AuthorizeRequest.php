@@ -11,7 +11,6 @@ class AuthorizeRequest extends AbstractRequest
         $data = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><multipay/>');
 
         $data->addChild('project_id', $this->getProjectId());
-        $data->addChild('language_code', 'de');
         $data->addChild('amount', $this->getAmount());
         $data->addChild('currency_code', $this->getCurrency());
         $data->addChild('success_url', str_replace('&', '&amp;', $this->getReturnUrl()));
@@ -33,6 +32,9 @@ class AuthorizeRequest extends AbstractRequest
 
         $su = $data->addChild('su');
         $su->addChild('customer_protection', 1);
+
+        $sender = $data->addChild('sender');
+        $sender->addChild('country_code', $this->getCountry());
 
         return $data;
     }

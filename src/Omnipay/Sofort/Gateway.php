@@ -51,6 +51,16 @@ class Gateway extends AbstractGateway
         return $this->setParameter('projectId', $value);
     }
 
+    public function getCountry()
+    {
+        return $this->getParameter('country');
+    }
+
+    public function setCountry($value)
+    {
+        return $this->setParameter('country', $value);
+    }
+
     public function authorize(array $parameters = array())
     {
         return $this->createRequest('\Omnipay\Sofort\Message\AuthorizeRequest', $parameters);

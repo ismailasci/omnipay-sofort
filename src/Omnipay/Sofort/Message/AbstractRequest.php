@@ -36,6 +36,16 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         return $this->setParameter('projectId', $value);
     }
 
+    public function getCountry()
+    {
+        return $this->getParameter('country');
+    }
+
+    public function setCountry($value)
+    {
+        return $this->setParameter('country', $value);
+    }
+
     public function sendData($data)
     {
         $httpResponse = $this->httpClient
