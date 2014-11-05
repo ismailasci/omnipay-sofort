@@ -17,6 +17,7 @@ class AuthorizeRequestTest extends TestCase
             'returnUrl' => 'https://www.example.com/return',
             'cancelUrl' => 'https://www.example.com/cancel',
             'notifyUrl' => 'https://www.example.com/notify',
+            'country' => 'de',
         ));
 
         $data = $request->getData();
@@ -24,7 +25,7 @@ class AuthorizeRequestTest extends TestCase
         $this->assertInstanceOf('SimpleXMLElement', $data);
         $this->assertSame('10.00', (string) $data->amount);
         $this->assertSame('EUR', (string) $data->currency_code);
-        $this->assertSame('de', (string) $data->language_code);
+        $this->assertSame('de', (string) $data->sender->country_code);
         $this->assertSame('https://www.example.com/return', (string) $data->success_url);
         $this->assertSame('https://www.example.com/cancel', (string) $data->abort_url);
         $this->assertSame('https://www.example.com/notify', (string) $data->notification_urls[0]->notification_url);
@@ -43,6 +44,7 @@ class AuthorizeRequestTest extends TestCase
                 'returnUrl' => 'https://www.example.com/return',
                 'cancelUrl' => 'https://www.example.com/cancel',
                 'notifyUrl' => 'https://www.example.com/notify',
+                'country' => 'de',
             ));
 
         $data = $request->getData();
@@ -50,7 +52,7 @@ class AuthorizeRequestTest extends TestCase
         $this->assertInstanceOf('SimpleXMLElement', $data);
         $this->assertSame('10.00', (string) $data->amount);
         $this->assertSame('EUR', (string) $data->currency_code);
-        $this->assertSame('de', (string) $data->language_code);
+        $this->assertSame('de', (string) $data->sender->country_code);
         $this->assertSame('https://www.example.com/return', (string) $data->success_url);
         $this->assertSame('https://www.example.com/cancel', (string) $data->abort_url);
         $this->assertSame('https://www.example.com/notify', (string) $data->notification_urls[0]->notification_url);
