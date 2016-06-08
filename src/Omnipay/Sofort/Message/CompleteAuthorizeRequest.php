@@ -11,7 +11,7 @@ class CompleteAuthorizeRequest extends AbstractRequest
         $data = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><transaction_request/>');
 
         $data->addAttribute('version', 2);
-        $data->addChild('transaction', $this->getTransactionId());
+        $data->addChild('transaction', $this->getTransactionReference());
 
         return $data;
     }
