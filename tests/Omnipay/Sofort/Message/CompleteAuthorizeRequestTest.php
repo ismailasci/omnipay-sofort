@@ -9,7 +9,7 @@ class CompleteAuthorizeRequestTest extends TestCase
     public function testGetData()
     {
         $request = new CompleteAuthorizeRequest($this->getHttpClient(), $this->getHttpRequest());
-        $request->initialize(array('transactionRef' => '55742-165747-52441DAF-3596'));
+        $request->initialize(array('transactionReference' => '55742-165747-52441DAF-3596'));
 
         $data = $request->getData();
 
