@@ -77,7 +77,7 @@ $gateway->initialize(array(
 ));
 
 $response = $gateway->completeAuthorize(array(
-    'transactionRef' => $transactionReference,
+    'transactionReference' => $transactionReference,
 ))->send();
 
 if ($response->isSuccessful()) {
