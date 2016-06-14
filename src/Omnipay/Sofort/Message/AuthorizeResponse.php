@@ -21,11 +21,6 @@ class AuthorizeResponse extends Response implements RedirectResponseInterface
         return (string) $this->data->transaction;
     }
 
-    public function getRedirectData()
-    {
-        return null;
-    }
-
     public function getMessage()
     {
         if (false === $this->isRedirect()) {

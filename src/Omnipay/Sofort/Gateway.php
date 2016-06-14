@@ -17,7 +17,7 @@ class Gateway extends AbstractGateway
             'username' => '',
             'password' => '',
             'projectId' => '',
-            'testMode' => true,
+            'testMode' => false,
         );
     }
 

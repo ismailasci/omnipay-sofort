@@ -21,4 +21,15 @@ class CompleteAuthorizeResponseTest extends TestCase
 
         $this->assertFalse($response->isSuccessful());
     }
+
+    public function testCompleteAuthorizeRedirect()
+    {
+        $httpResponse = $this->getMockHttpResponse('CompleteAuthorizeSuccess.txt');
+        $response = new CompleteAuthorizeResponse($this->getMockRequest(), $httpResponse);
+
+        $this->assertFalse($response->isRedirect());
+        $this->assertTrue($response->isSuccessful());
+        $this->assertNull($response->getRedirectData());
+        $this->assertNull($response->getRedirectUrl());
+    }
 }

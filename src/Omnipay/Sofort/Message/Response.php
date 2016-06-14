@@ -9,7 +9,7 @@ class Response extends AbstractResponse
 {
     public function __construct(RequestInterface $request, $response)
     {
-        $this->request = $request;
+        parent::__construct($request, $response);
         $this->data = $response->xml();
     }
 
@@ -25,11 +25,9 @@ class Response extends AbstractResponse
 
     public function getRedirectData()
     {
-        return null;
     }
 
     public function getRedirectUrl()
     {
-        return null;
     }
 }
