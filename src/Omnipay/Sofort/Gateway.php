@@ -17,6 +17,7 @@ class Gateway extends AbstractGateway
             'username' => '',
             'password' => '',
             'projectId' => '',
+            'protection' => true,
             'testMode' => false,
         );
     }
@@ -59,6 +60,16 @@ class Gateway extends AbstractGateway
     public function setCountry($value)
     {
         return $this->setParameter('country', $value);
+    }
+
+    public function getProtection()
+    {
+        return $this->getParameter('protection');
+    }
+
+    public function setProtection($value)
+    {
+        return $this->setParameter('protection', $value);
     }
 
     public function authorize(array $parameters = array())

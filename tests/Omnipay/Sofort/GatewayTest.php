@@ -71,8 +71,10 @@ class GatewayTest extends GatewayTestCase
     {
     	$this->gateway->initialize(array(
             'country' => 'de',
+            'protection' => 1,
     	));
 
     	$this->assertEquals('de', $this->gateway->getCountry());
+        $this->assertEquals(true, $this->gateway->getProtection());
     }
 }
