@@ -2,10 +2,11 @@
 
 namespace Omnipay\Sofort\Message;
 
-use Omnipay\Common\Message\AbstractResponse;
+
 use Omnipay\Common\Message\RequestInterface;
 
-class Response extends AbstractResponse
+
+abstract class AbstractResponse extends \Omnipay\Common\Message\AbstractResponse
 {
     public function __construct(RequestInterface $request, $response)
     {
