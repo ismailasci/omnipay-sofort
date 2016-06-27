@@ -4,7 +4,7 @@ namespace Omnipay\Sofort\Message;
 
 use Omnipay\Common\Message\RedirectResponseInterface;
 
-class CompleteAuthorizeResponse extends Response implements RedirectResponseInterface
+class CompleteAuthorizeResponse extends AbstractResponse implements RedirectResponseInterface
 {
     public function isSuccessful()
     {

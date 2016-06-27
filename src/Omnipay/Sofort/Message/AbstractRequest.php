@@ -46,6 +46,16 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         return $this->setParameter('country', $value);
     }
 
+    public function getProtection()
+    {
+        return $this->getParameter('protection');
+    }
+
+    public function setProtection($value)
+    {
+        return $this->setParameter('protection', $value);
+    }
+
     public function sendData($data)
     {
         $httpResponse = $this->httpClient

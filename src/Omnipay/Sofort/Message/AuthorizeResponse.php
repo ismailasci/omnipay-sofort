@@ -4,7 +4,7 @@ namespace Omnipay\Sofort\Message;
 
 use Omnipay\Common\Message\RedirectResponseInterface;
 
-class AuthorizeResponse extends Response implements RedirectResponseInterface
+class AuthorizeResponse extends AbstractResponse implements RedirectResponseInterface
 {
     public function isRedirect()
     {
@@ -19,11 +19,6 @@ class AuthorizeResponse extends Response implements RedirectResponseInterface
     public function getTransactionReference()
     {
         return (string) $this->data->transaction;
-    }
-
-    public function getRedirectData()
-    {
-        return null;
     }
 
     public function getMessage()
