@@ -1,17 +1,9 @@
 SOFORT Überweisung Omnipay gateway
 ==============
 
-[![Build Status](https://travis-ci.org/ismailasci/omnipay-sofort.png?branch=master)](https://travis-ci.org/ismailasci/omnipay-sofort)
-[![Latest Stable Version](https://poser.pugx.org/asci/omnipay-sofort/v/stable.png)](https://packagist.org/packages/asci/omnipay-sofort)
-[![Total Downloads](https://poser.pugx.org/asci/omnipay-sofort/downloads.png)](https://packagist.org/packages/asci/omnipay-sofort)
-
+[![Build Status](https://travis-ci.org/aimeoscom/omnipay-sofort.png?branch=master)](https://travis-ci.org/aimeoscom/omnipay-sofort)
 
 [SOFORT Überweisung](https://www.sofort.com/eng-INT/) gateway for awesome [Omnipay](https://github.com/adrianmacneil/omnipay) library.
-
-**Important Note: Omnipay 1.x Users**
-
-If you are using Omnipay 1.x versions please use [1.x](https://github.com/ismailasci/omnipay-sofort/tree/1.x) tree.
-For detailed information you can check Omnipay's 2.0 [release notes](https://github.com/omnipay/omnipay/releases/tag/v2.0.0).
 
 #### API Notes
 
@@ -26,7 +18,7 @@ To install, simply add it to your composer.json file:
 ```json
 {
     "require": {
-        "asci/omnipay-sofort": "~2.0"
+        "aimeoscom/omnipay-sofort": "~2.0"
     }
 }
 ```
