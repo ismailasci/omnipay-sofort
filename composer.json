@@ -5,18 +5,16 @@
     "keywords": ["omnipay", "sofort", "uberweisung", "payment", "gateway", "provider"],
     "license": "MIT",
     "authors": [{
-        "name": "Ismail Asci",
-        "email": "ismail.asci@gmail.com"
-    },{
         "name": "Aimeos GmbH",
         "email": "dev@aimeos.com"
+    },{
+        "name": "Ismail Asci",
+        "email": "ismail.asci@gmail.com"
     }],
-	"repositories": [
-		{
+	"repositories": [{
 			"type": "vcs",
 			"url": "https://github.com/aimeos/php-coveralls.git"
-		}
-	],
+	}],
     "require": {
         "omnipay/common": "~2.0"
     },
