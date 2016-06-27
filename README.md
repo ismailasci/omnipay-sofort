@@ -2,6 +2,8 @@ SOFORT Überweisung Omnipay gateway
 ==============
 
 [![Build Status](https://travis-ci.org/aimeoscom/omnipay-sofort.png?branch=master)](https://travis-ci.org/aimeoscom/omnipay-sofort)
+[![Coverage Status](https://coveralls.io/repos/github/aimeoscom/omnipay-sofort/badge.svg?branch=master)](https://coveralls.io/github/aimeoscom/omnipay-sofort?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/aimeoscom/omnipay-sofort/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/aimeoscom/omnipay-sofort/?branch=master)
 
 [SOFORT Überweisung](https://www.sofort.com/eng-INT/) gateway for awesome [Omnipay](https://github.com/adrianmacneil/omnipay) library.
 
