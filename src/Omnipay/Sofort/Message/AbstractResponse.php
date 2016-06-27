@@ -2,9 +2,7 @@
 
 namespace Omnipay\Sofort\Message;
 
-
 use Omnipay\Common\Message\RequestInterface;
-
 
 abstract class AbstractResponse extends \Omnipay\Common\Message\AbstractResponse
 {
