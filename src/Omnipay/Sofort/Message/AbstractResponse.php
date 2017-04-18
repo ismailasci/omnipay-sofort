@@ -12,11 +12,6 @@ abstract class AbstractResponse extends \Omnipay\Common\Message\AbstractResponse
         $this->data = $response->xml();
     }
 
-    public function isSuccessful()
-    {
-        return false;
-    }
-
     public function getRedirectMethod()
     {
         return 'GET';
