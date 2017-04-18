@@ -6,6 +6,11 @@ use Omnipay\Common\Message\RedirectResponseInterface;
 
 class AuthorizeResponse extends AbstractResponse implements RedirectResponseInterface
 {
+    public function isSuccessful()
+    {
+        return isset($this->data->transaction);
+    }
+    
     public function isRedirect()
     {
         return isset($this->data->transaction) && isset($this->data->payment_url) && !isset($this->data->errors);
