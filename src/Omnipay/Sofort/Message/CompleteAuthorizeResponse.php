@@ -11,4 +11,15 @@ class CompleteAuthorizeResponse extends AbstractResponse implements RedirectResp
         return isset($this->data->transaction_details) &&
             false === in_array($this->data->transaction_details->status, array('loss', 'refunded'));
     }
+
+
+    /**
+     * Gateway Reference
+     * 
+     * @return null|string A reference provided by the gateway to represent this transaction
+     */
+    public function getTransactionReference()
+    {
+        return $this->getRequest()->getTransactionReference();
+    }
 }
