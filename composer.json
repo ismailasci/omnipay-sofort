@@ -11,14 +11,11 @@
         "name": "Ismail Asci",
         "email": "ismail.asci@gmail.com"
     }],
-	"repositories": [{
-			"type": "vcs",
-			"url": "https://github.com/aimeos/php-coveralls.git"
-	}],
     "require": {
         "omnipay/common": "~2.0"
     },
     "require-dev": {
+        "squizlabs/php_codesniffer": "~3.4",
         "php-coveralls/php-coveralls": "~2.0",
         "omnipay/tests": "~2.0"
     },
