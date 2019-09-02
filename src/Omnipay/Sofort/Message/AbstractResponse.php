@@ -9,7 +9,7 @@ abstract class AbstractResponse extends \Omnipay\Common\Message\AbstractResponse
     public function __construct(RequestInterface $request, $response)
     {
         parent::__construct($request, $response);
-        $this->data = $response->xml();
+        $this->data = $response->getBody()->getContents();
     }
 
     public function getRedirectMethod()
