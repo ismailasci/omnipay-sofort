@@ -86,4 +86,9 @@ class Gateway extends AbstractGateway
     {
         return $this->authorize($parameters);
     }
+
+    public function refund(array $parameters = array())
+    {
+        return $this->createRequest('\Omnipay\Sofort\Message\RefundRequest', $parameters);
+    }
 }
