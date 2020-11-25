@@ -8,7 +8,7 @@ class AuthorizeResponse extends AbstractResponse implements RedirectResponseInte
 {
     public function isSuccessful()
     {
-        return isset($this->data->transaction) && isset($this->data->payment_url);
+        return isset($this->data->transaction) && !isset($this->data->payment_url);
     }
 
     public function isRedirect()
