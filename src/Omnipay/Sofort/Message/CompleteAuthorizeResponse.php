@@ -31,6 +31,17 @@ class CompleteAuthorizeResponse extends AbstractResponse implements RedirectResp
 
 
     /**
+     * Returns the transaction ID
+     *
+     * @return string
+     */
+    public function getTransactionId()
+    {
+        return $this->getRequest()->getTransactionId();
+    }
+
+
+    /**
      * Gateway Reference
      *
      * @return null|string A reference provided by the gateway to represent this transaction
