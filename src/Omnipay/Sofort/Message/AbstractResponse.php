@@ -2,20 +2,14 @@
 
 namespace Omnipay\Sofort\Message;
 
-use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RequestInterface;
 
-class Response extends AbstractResponse
+abstract class AbstractResponse extends \Omnipay\Common\Message\AbstractResponse
 {
     public function __construct(RequestInterface $request, $response)
     {
-        $this->request = $request;
-        $this->data = $response->xml();
-    }
-
-    public function isSuccessful()
-    {
-        return false;
+        parent::__construct($request, $response);
+        $this->data = simplexml_load_string($response->getBody()->getContents());
     }
 
     public function getRedirectMethod()
@@ -25,11 +19,9 @@ class Response extends AbstractResponse
 
     public function getRedirectData()
     {
-        return null;
     }
 
     public function getRedirectUrl()
     {
-        return null;
     }
 }

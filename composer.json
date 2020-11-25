@@ -1,27 +1,25 @@
 {
-    "name": "asci/omnipay-sofort",
+    "name": "aimeoscom/omnipay-sofort",
     "description": "SOFORT Überweisung gateway for Omnipay payment processing library",
     "type": "library",
     "keywords": ["omnipay", "sofort", "uberweisung", "payment", "gateway", "provider"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Ismail Asci",
-            "email": "ismail.asci@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-0": { "Omnipay\\Sofort\\" : "src/" }
-    },
+    "authors": [{
+        "name": "Aimeos GmbH",
+        "email": "dev@aimeos.com"
+    },{
+        "name": "Ismail Asci",
+        "email": "ismail.asci@gmail.com"
+    }],
     "require": {
-        "omnipay/common": "~2.0"
+        "omnipay/common": "~3.0"
     },
     "require-dev": {
-        "omnipay/tests": "~2.0"
+        "php-coveralls/php-coveralls": "~2.0",
+        "squizlabs/php_codesniffer": "~3.0",
+        "omnipay/tests": "~3.0"
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
-        }
+    "autoload": {
+        "psr-0": { "Omnipay\\Sofort\\" : "src/" }
     }
 }

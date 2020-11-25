@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 28 Sep 2013 19:02:50 GMT
+Content-Type: application/xml
+Content-Length: 1541
+Connection: close
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<refunds><refund><transaction>00000-00000-00000000-0002</transaction><amount>1.11</amount><reason_1>OrderID 123456</reason_1><reason_2>Refund</reason_2><time>2020-02-19T16:31:59+01:00</time><partial_refund_id>fb1244caad</partial_refund_id><status>accepted</status></refund></refunds>

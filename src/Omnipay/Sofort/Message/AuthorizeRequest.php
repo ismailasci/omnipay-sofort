@@ -13,6 +13,7 @@ class AuthorizeRequest extends AbstractRequest
         $data->addChild('project_id', $this->getProjectId());
         $data->addChild('amount', $this->getAmount());
         $data->addChild('currency_code', $this->getCurrency());
+        $data->addChild('test', $this->getTestMode());
         $data->addChild('success_url', str_replace('&', '&amp;', $this->getReturnUrl()));
         $data->addChild('abort_url', str_replace('&', '&amp;', $this->getCancelUrl()));
         $data->addChild('notification_urls')->addChild(
@@ -31,7 +32,7 @@ class AuthorizeRequest extends AbstractRequest
         }
 
         $su = $data->addChild('su');
-        $su->addChild('customer_protection', 1);
+        $su->addChild('customer_protection', (int) (bool) $this->getProtection());
 
         $sender = $data->addChild('sender');
         $sender->addChild('country_code', $this->getCountry());
